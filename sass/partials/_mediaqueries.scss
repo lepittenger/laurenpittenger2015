@@ -1,0 +1,57 @@
+@media screen and (max-width: 667px) {
+  #logo {
+    float: initial;
+    width: 17%;
+    margin-top: 5px;
+    margin: 0 auto;
+  }
+  #menu {
+    float: initial;
+    margin-top: 25px !important;
+  }
+  #menu ul li a {
+    font-size: 25px  !important;
+    display: inline-block;
+    padding: 7px;
+  }
+  .dropdown {
+    text-align: center;
+  }
+  .dropdown li {
+    display: inline;
+    float: none;
+  }
+}
+@media screen and  (min-width: 641px) and (max-width: 780px)  {
+  .posts .postcontent {
+    width: 100%;
+  }
+  .posts .post-thumb {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 486px){
+  .posts .postcontent {
+    width: 100%;
+  }
+  .posts .post-thumb {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 471px) {
+  #menu {
+    margin: 20px 8% 0 !important;
+  }
+  .dropdown {
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+  }
+  .dropdown li {
+    display: inline-block;
+    float:left;
+    width: 50%;
+  }
+}

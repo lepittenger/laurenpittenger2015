@@ -1,0 +1,58 @@
+#header { 
+  padding-top:12px;
+}
+#menu {
+  margin-top:50px;
+  ul li a {
+    font-size: em(20); 
+    text-transform: uppercase;
+    font-family: $fontset1;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.dropdown a {
+  color: $color3;
+}
+li.current-menu-item a, 
+li.current_page_item a, 
+li.current-menu-ancestor a, 
+li.current-menu-parent a, 
+li.current_page_parent a,
+.dropdown a:hover {
+  color: darken($color3, 20%);
+  border-bottom: 5px solid darken($color3, 20%);
+}
+#heading {
+  .action {
+    float: right;
+    margin: 50px;
+    background: $color1;
+    color: $color2;
+    position: relative;
+    overflow: visible;
+    padding: 13px 0;
+    font-family: $fontset4;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.1;
+    text-shadow: none;
+    :hover {
+      color: #fff;
+      background: $color4;
+      span {
+        background: $color4;
+      }
+    }
+    span {
+      position: relative;
+      white-space: nowrap;
+      left: 24px;
+      padding: 13px 24px 12px 0;
+      top: 1px;
+      background: $color4;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  }
+}
+}

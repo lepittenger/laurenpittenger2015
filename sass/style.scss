@@ -1,0 +1,24 @@
+/**
+ * Theme Name: Lauren's Portfolio
+ * Theme URI: http://laurenpittenger.com
+ * Description: Lauren's Portfolio Theme
+ * Version: 0.1
+ * Author: Lauren Pittenger
+ * Author URI: http://laurenpittenger.com.com
+ * Template: vimes
+ *
+ */
+
+/* Load parent's CSS */
+@import url("../vimes/style.css");
+
+@import "compass";
+//@import "partials/normalize";
+@import "partials/mixins";
+@import "partials/variables";
+@import "partials/typography";
+@import "partials/header";
+@import "partials/layout";
+@import "partials/modules";
+@import "partials/footer";
+@import "partials/mediaqueries";

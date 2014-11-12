@@ -1,0 +1,14 @@
+#footer {
+  background: lighten($color1, 70%);
+  .widget ul {
+    margin-left: 23px;
+    li {
+      list-style-type: disc;
+      list-style-position: outside;
+    }
+  }
+  .copyright {
+    background: lighten($color4, 30%);
+    font-family: $fontset2;
+  }
+}

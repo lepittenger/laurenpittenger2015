@@ -1,0 +1,23 @@
+/* buttons */
+
+.tags a {
+  color: $color2;
+  background: $color3;
+  text-transform: uppercase;
+  padding: 3px 7px;
+  margin: 0 0 7px 5px;
+  font-size: inherit;
+  font-family: $fontset2;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  &:hover {
+    background: darken($color3, 20%);
+  }
+}
+
+code {
+  background: $color1;
+  color: $color2;
+}

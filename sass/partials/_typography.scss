@@ -1,0 +1,123 @@
+html {
+  font-size: 1em;
+}
+
+body {
+  font-weight: 400;
+  line-height: 1.45em;
+}
+
+p {
+  font-family: $fontset3;
+  font-size: em(16);
+  margin-bottom: 1.3em;
+}
+h1, h2, h3, h4 {
+  margin: 0 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  font-family: $fontset1;
+}
+h1 {
+  font-size: $fontlevel1;
+  margin-top: 0;
+}
+h2 {
+  font-size: $fontlevel2;
+}
+h3 {
+  font-size: $fontlevel3;
+}
+h4 {
+  font-size: $fontlevel4;
+}
+h5 {
+  font-size: $fontlevel5;
+}
+h6 {
+  font-size: $fontlevel6;
+}
+a {
+  color: $color3;
+  &:hover {
+    color: darken($color3, 20%);
+  }
+}
+/* reset all the things */
+.post_content,
+.entry {
+  font-size: initial;
+}
+
+/* blog list page */
+
+/* ******* blog single ******** */
+
+//.postcontent h2 a, 
+/*
+.single .post_content h1 a {
+  font-family: $fontset2;
+  font-size: $fontlevel1;
+  font-weight: 700;
+  letter-spacing: em(1);
+  line-height: 1.25;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  word-spacing: em(3);
+}
+*/
+.post_content h1 a {
+  color: $color1;
+  font-size: inherit;
+  line-height: inherit;
+  margin-bottom: 8px;
+  font-family: $fontset1;
+}
+.meta {
+  font-size: em(14);
+  font-family: $fontset2;
+  a {
+    font-size: em(14);
+  }
+}
+.entry .tags {
+  font-size: $fontsmall;
+  font-family: $fontset2;
+}
+
+
+#sidebar {
+  .widget {
+    font-size: initial;
+  }
+  h3.title span,
+  #sidebar .widget h3 {
+    font-size: $fontlevel4;
+  }
+  .textwidget,
+  .jcl_widget {
+    font-size: $fontsmall; // 
+    font-family: $fontset3;
+  }
+}
+
+/* forms */
+#main #formLabels p {
+  color: $color1;
+}
+input[type="submit"]:hover, 
+#mc_embed_signup .button:hover,
+a.button:hover,
+.subscription_btn:hover,
+#respond .button:hover {
+  background: darken($color4, 20%) !important;
+  background: -moz-linear-gradient(top, darken($color4, 20%) 0%, darken($color4, 20%) 100%);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(darken($color4, 20%)), to(darken($color4, 20%)));
+  color: $color2;
+  border: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  cursor: pointer;
+  text-shadow: none;
+  -webkit-background-clip: padding-box;
+}
