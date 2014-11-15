@@ -1,0 +1,31 @@
+/*!-- HOME */
+#heading {
+  background: darken($color1, 20%);
+  .action {
+    text-shadow: none;
+    font-family: $fontset2 !important;
+  }
+}
+#sidebar {
+  
+  float: right;
+  display: inline;
+  width: 260px;
+  position: relative;
+  margin: 0;
+  h3.title span, 
+  .widget h3 {
+    font-size: 1em;
+  }
+  .widget {
+    background: lighten($color1, 69%);
+    padding: 15px;
+  }
+}
+
+.posts {
+  border-bottom: 1px dotted lighten($color1, 60%);
+  padding: 0 0 20px;
+  margin: 0 0 25px;
+  font-size: 1em;
+}

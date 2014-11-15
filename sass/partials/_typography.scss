@@ -1,11 +1,4 @@
-html {
-  font-size: 1em;
-}
 
-body {
-  font-weight: 400;
-  line-height: 1.45em;
-}
 
 p {
   font-family: $fontset3;
@@ -41,6 +34,19 @@ a {
   color: $color3;
   &:hover {
     color: darken($color3, 20%);
+  }
+}
+.entry blockquote {
+  font-style: normal;
+  font-family:$fontset3;
+  font-size: 1em;
+  border: 0;
+  border-left: solid 5px $color1;
+  padding: 15px;
+  margin: 10px; 
+  footer {
+    font-size: 0.8em;
+    font-family: $fontset2;
   }
 }
 /* reset all the things */
@@ -106,7 +112,7 @@ a {
   color: $color1;
 }
 input[type="submit"]:hover, 
-#mc_embed_signup .button:hover,
+#mc_embed_signup .button:hover, #footer .button:hover,
 a.button:hover,
 .subscription_btn:hover,
 #respond .button:hover {
@@ -120,4 +126,49 @@ a.button:hover,
   cursor: pointer;
   text-shadow: none;
   -webkit-background-clip: padding-box;
+}
+/* inputs */
+input[type="submit"],
+#mc_embed_signup .button,
+a.button,
+#footer a.button,
+#respond .button {
+  background: $color4;
+  background: -moz-linear-gradient(top, $color4 0%, $color4 100%);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($color4), to($color4));
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  color: $color2; 
+  cursor: pointer;
+  font-family: $fontset2;
+  font-size: inherit;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  padding: 7px 10px;
+  margin: 10px 0 15px 80px;
+  text-align: center;
+  float: left;
+  display: inline;
+  width: auto;
+  text-shadow: none;
+  text-transform: uppercase;
+  -webkit-background-clip: padding-box;
+}
+
+input[type="text"],
+input[type="email"] {
+  background: $color2;
+  text-align: center;
+  letter-spacing: 2px;
+  font: inherit;
+  border: 1px solid $color1;
+  border-radius: 0;
 }

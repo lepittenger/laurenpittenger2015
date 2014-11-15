@@ -21,3 +21,14 @@ code {
   background: $color1;
   color: $color2;
 }
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+.circle {
+  @include border-radius(100%);
+}
+.rounded {
+  @include border-radius(10px);
+}

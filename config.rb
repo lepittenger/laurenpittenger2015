@@ -18,3 +18,5 @@ line_comments = false
 color_output = false
 
 preferred_syntax = :scss
+
+sourcemap = true

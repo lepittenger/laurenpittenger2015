@@ -1,58 +1,238 @@
-#header { 
-  padding-top:12px;
+/********************************************************************************************* 
+
+2. Header & Page Structure  -------------------------  header.php
+
+*********************************************************************************************/  
+html {
+  font-size: 1em;
 }
-#menu {
-  margin-top:50px;
-  ul li a {
-    font-size: em(20); 
-    text-transform: uppercase;
-    font-family: $fontset1;
+body {
+    background: $color2 url("images/bg.png");
+    color: $color1;
+    font-family: $fontset3;
+    text-align: center;
+    font-size:inherit;
+    line-height:1.45em;
+}
+ 
+#wrapper {
+    background: #fff;
+    border-left: 2px solid lighten($color1, 65%);
+    border-right: 2px solid lighten($color1, 65%);
+    margin: 0 auto;
+    text-align: center;
+    width: 961px;
+}
+.footer-wrapper {
+  width: 961px;
+  margin: 0 auto;
+}
+
+#inner-wrap {
+  text-align: left;
+    width: 936px;
+    margin-left:25px;
+}
+
+#header {
+    padding-top: 55px;
+    padding-bottom:  12px;
+    width:910px;
+    margin-bottom:30px;
+}
+
+#logo {
+    float:none;
+    text-align: center;
+    img {
+      max-width: 55px;
+    }
+}
+
+#logo h1 a {
+    color: #454343;
+    margin: 10px 0;
+    font-size: 26px;
+    font-family: Arial, sans-serif;
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
-.dropdown a {
-  color: $color3;
-}
-li.current-menu-item a, 
-li.current_page_item a, 
-li.current-menu-ancestor a, 
-li.current-menu-parent a, 
-li.current_page_parent a,
-.dropdown a:hover {
-  color: darken($color3, 20%);
-  border-bottom: 5px solid darken($color3, 20%);
-}
+
+
+#content, .home_widgets { width:910px; }
+
+/********************************************************************************************* 
+
+5. Welcome Message 
+
+*********************************************************************************************/   
 #heading {
+  background: lighten($color1, 65%) !important;
+  margin-bottom: 28px;
+  padding: 20px;
+  font-family: $fontset3;
+  width:870px;
   .action {
-    float: right;
-    margin: 50px;
-    background: $color1;
+    float:right;
+    margin:50px;
+    background: $color4;
+    text-shadow: none;
     color: $color2;
     position: relative;
     overflow: visible;
-    padding: 13px 0;
-    font-family: $fontset4;
-    font-size: 14px;
+    padding: 14px 0 16px;
+    font-family: $fontset2;
+    font-size: em(14);
     font-weight: bold;
-    line-height: 1.1;
-    text-shadow: none;
-    :hover {
+    line-height:1.1;
+    &:hover {
       color: #fff;
-      background: $color4;
+      background: darken($color4, 20%);
+      text-decoration: none;
       span {
-        background: $color4;
+        background: darken($color4, 20%);
       }
+    }
+    :active {
+      top:1px;
     }
     span {
       position: relative;
       white-space: nowrap;
       left: 24px;
-      padding: 13px 24px 12px 0;
+      padding: 13px 24px 13px 0;
       top: 1px;
       background: $color4;
       text-transform: uppercase;
       letter-spacing: 2px;
     }
   }
+  h2, h1 {
+    color: $color1;
+    padding: 5px 0;
+    text-transform: uppercase;
+    font-family: $fontset2;
+    font-weight:bold;
+    font-size:em(30);
+    letter-spacing:2px;
+    margin-bottom: 0;
+  }
+  p {
+    color: $color1;
+    font-size: em(20);
+    line-height: 1.5;
+    padding: 5px 0;
+    margin-bottom: 0;
+  }
 }
+
+
+
+#header { 
+  border-bottom: 0;
+  padding-top:12px;
+  a {
+    color: $color1;
+    &:hover {
+      text-decoration: none;
+    }
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: $fontset2;
+      font-weight: 700;
+      margin-top: 22px;
+      margin-bottom: 0.15em;
+    }
+    p {
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+}
+#menu {
+  width: 70%;
+  margin: 30px auto 0;
+  float: none;
+  ul#mainmenu {
+    border-bottom: 1px dotted lighten($color1, 60%);
+    border-top: 1px dotted lighten($color1, 60%);
+    float: left;
+    width: 100%;
+    li{
+      width: 25%;
+      display: inline-block;
+      float: left;
+      a {
+        font-size: em(20); 
+        text-transform: uppercase;
+        font-family: $fontset1;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+    }
+  }
+  .dropdown {
+    text-align: center;
+    a {
+      color: lighten($color1, 30%);
+    }
+  }
+  li.current-menu-item a, 
+  li.current_page_item a, 
+  li.current-menu-ancestor a, 
+  li.current-menu-parent a, 
+  li.current_page_parent a,
+  .dropdown a:hover {
+    color: $color3;
+    //border-bottom: 5px solid darken($color3, 20%);
+  }
+}
+
+#menu-blog {
+  border-bottom: 1px dotted lighten($color1, 60%);
+  border-top: 0;
+  width: 70%;
+  margin: 0 auto;
+  float: none;
+  ul li{
+    display: inline-block;
+    float: left;
+    text-align: center;
+    width: 16.66%;
+    background: $color3;
+    &:hover {
+      background: darken($color3, 10%);
+    }
+    a {
+      color: $color2;
+      font-size: em(13); 
+      text-transform: uppercase;
+      font-family: $fontset1;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+  }
+  .dropdown ul.sub-menu {
+    position: absolute;
+    top: -999;
+    width: 170px;
+    background: lighten($color1, 50%);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=90);
+    -moz-opacity: 0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9;
+    li {
+      width: 100%;
+      float: left;
+    }
+  }
 }

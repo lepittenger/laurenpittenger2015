@@ -1,14 +1,82 @@
+/********************************************************************************************* 
+
+12. Footer  -------------------------  footer.php
+
+*********************************************************************************************/   
+
 #footer {
-  background: lighten($color1, 70%);
-  .widget ul {
-    margin-left: 23px;
+  background: lighten($color1, 69%);
+  border-top: 5px solid lighten($color1, 60%);
+  margin-top: 0;
+  text-align: left;
+  div.column {
+    width: percentage(284/911);
+    margin-right: percentage(26/911);
+  }
+  .widgets {
+    padding:15px 25px 25px 25px;
+    margin-bottom: 25px;
+  }
+  .widget_ultimate_posts ul {
+    margin-bottom: 10px;
     li {
-      list-style-type: disc;
-      list-style-position: outside;
+      margin-bottom: 6px;
+      margin-bottom: 1px solid $color2;
+    }
+    p.post-title {
+      line-height: 1.3em;
+      margin-bottom: 2px;
+    }
+  }
+  .widget {
+    width: 98%;
+    font-size: 0.85em;
+    ul {
+      margin-left: percentage(20/280);
+      li {
+        list-style-type: disc;
+        list-style-position: outside;
+        p {
+          margin-bottom: inherit;
+          font-family: $fontset2;
+          font-size: em(17);
+        }
+      }
+    }
+    p.post-date {
+      font-size: 0.8em;
+    }
+    h3 {
+      color: $color1;
+      font-size: $fontlevel4;
+      font-family: $fontset2;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin: 10px 0 15px;
     }
   }
   .copyright {
-    background: lighten($color4, 30%);
+    background: $color4; //darken($color4, 20%);
+    color: $color2;
     font-family: $fontset2;
+    height: 42px; 
+    padding: 25px 25px 0; 
+    font-family: $fontset2;
+    font-size: 0.8em;
+    .left {
+      float: left;
+    }
+    .right {
+      float: right;
+    }
   }
 }
+ 
+#footer div.last {margin-right: 0;}
+#footer a {color: #333; text-decoration:none;}
+#footer a:hover {color:#01AEFF;}
+ 
+#footer p.wpzoom { float: right; display: inline; line-height: 16px; width: 184px; }
+#footer p.wpzoom img { float: right; display: inline; padding: 2px 0 0 2px; }
+
