@@ -55,6 +55,13 @@
       text-transform: uppercase;
       margin: 10px 0 15px;
     }
+    .social-follow-me {
+      margin: 0;
+      li {
+        float: left;
+        width: 14%;
+      }
+    }
   }
   .copyright {
     background: $color4; //darken($color4, 20%);

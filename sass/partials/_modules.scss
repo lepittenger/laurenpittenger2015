@@ -18,7 +18,7 @@
 }
 
 code {
-  background: $color1;
+  background: lighten($color1, 10%);
   color: $color2;
 }
 

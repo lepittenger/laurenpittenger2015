@@ -11,7 +11,7 @@ h1, h2, h3, h4 {
   line-height: 1.2;
   font-family: $fontset1;
 }
-h1 {
+h1, .post-title {
   font-size: $fontlevel1;
   margin-top: 0;
 }
@@ -72,6 +72,18 @@ a {
   word-spacing: em(3);
 }
 */
+.posts h2 a {
+  line-height: inherit;
+  margin: 0 0 4px;
+  font-size: inherit;
+  color: $color1;
+  font-weight: normal;
+  font-family: $fontset1;
+}
+.postcontent p {
+  line-height: 1.7;
+}
+
 .post_content h1 a {
   color: $color1;
   font-size: inherit;
@@ -86,15 +98,21 @@ a {
     font-size: em(14);
   }
 }
-.entry .tags {
+.entry .tags,
+.posts .tags {
   font-size: $fontsmall;
   font-family: $fontset2;
+  margin-top: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2.5;
 }
 
 
 #sidebar {
   .widget {
     font-size: initial;
+    line-height: 1.7;
   }
   h3.title span,
   #sidebar .widget h3 {
@@ -102,7 +120,7 @@ a {
   }
   .textwidget,
   .jcl_widget {
-    font-size: $fontsmall; // 
+    font-size: 0.9em; 
     font-family: $fontset3;
   }
 }
@@ -153,7 +171,7 @@ a.button,
   line-height: 1.2;
   letter-spacing: 2px;
   padding: 7px 10px;
-  margin: 10px 0 15px 80px;
+  margin: 10px 0 15px 0;
   text-align: center;
   float: left;
   display: inline;
@@ -166,9 +184,9 @@ a.button,
 input[type="text"],
 input[type="email"] {
   background: $color2;
-  text-align: center;
+  text-align: left;
   letter-spacing: 2px;
   font: inherit;
-  border: 1px solid $color1;
+  border: 1px solid lighten($color1, 20%);
   border-radius: 0;
 }

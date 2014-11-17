@@ -29,3 +29,17 @@
   margin: 0 0 25px;
   font-size: 1em;
 }
+.post-content {
+  width: 100%;
+  background: $color1;
+}
+.post-thumb {
+  width: 100%;
+}
+
+
+/* contact form */
+
+div.wpcf7 {
+  margin-top: 25px !important;
+}

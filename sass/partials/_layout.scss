@@ -5,6 +5,11 @@
   height: auto !important;
 }
 
+#sidebar .social-follow-me li {
+  float: left;
+  width: 14%;
+}
+
 #comments {
   background: lighten($color1, 65%);
   padding: 10px 4%;

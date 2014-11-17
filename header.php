@@ -60,7 +60,7 @@
              </div>
              <div id="menu-blog">
              	<?php
-             	if ( is_tag() || is_category() || is_single() || is_page('blog') ) {
+             	if ( is_tag() || is_category() || (is_single() && ! is_singular('portfolio')) || is_page('blog') ) {
 					if ( has_nav_menu( 'blog-menu' ) ) {
 					    wp_nav_menu( array(
 							'container' => 'menu', 
@@ -74,6 +74,29 @@
 							echo '<p>Please set your Blog navigation menu on the <strong><a href="'.get_admin_url().'nav-menus.php">Appearance > Menus</a></strong> page.</p>';
 					} 
 				}?> 
+             </div>
+             
+             <div id="mobile-menu">
+             	<div class="menu-btn" id="menu-btn">
+					 <div></div>
+					 <span></span>
+					 <span></span>
+					 <span></span>
+				</div>
+             	<?php
+             	if ( has_nav_menu( 'mobile-menu' ) ) {
+				    wp_nav_menu( array(
+						'container' => 'responsive-menu', 
+						'container_class' => '', 
+						'menu_class' => 'dropdown', 
+						'menu_id' => 'responsive-menu', 
+						'sort_column' => 'menu_order', 
+						'theme_location' => 'mobile-menu'
+					)); 
+				} else {
+					echo '<p>Please set your Blog navigation menu on the <strong><a href="'.get_admin_url().'nav-menus.php">Appearance > Menus</a></strong> page.</p>';
+				} 
+				?> 
              </div>
              
              <div class="clear"></div>
