@@ -98,7 +98,9 @@
 				} 
 				?> 
              </div>
-             
+             <?php if ( function_exists('yoast_breadcrumb') && ! is_front_page()) {
+				yoast_breadcrumb('<p id="breadcrumbs">','</p>');
+			} ?>
              <div class="clear"></div>
              
         </div><!-- / #header-->
