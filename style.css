@@ -456,6 +456,15 @@ ul.social-follow-me li {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 0.8em; }
 
+#searchform input[type="text"], #searchform input[type="email"] {
+  width: 55%;
+  float: left; }
+#searchform input[type="submit"] {
+  width: 39%;
+  margin: 0;
+  padding: 10px;
+  float: left; }
+
 #portfolio h3.title {
   width: 910px; }
 
@@ -801,6 +810,29 @@ code {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px; }
+
+#main ol.normalComments cite {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  font-style: normal;
+  float: left;
+  display: inline;
+  margin-right: 10px;
+  font-family: "Open Sans", Arial, sans-serif; }
+
+#main ol.normalComments .commentmetadata a {
+  line-height: 18px;
+  font-size: 11px;
+  margin-bottom: 5px;
+  color: #454343;
+  font-family: "Open Sans", Arial, sans-serif; }
+
+#main ol.normalComments li p {
+  font-size: 14px; }
+
+.reply a, .cancel-comment-reply a {
+  font-family: "Open Sans", Arial, sans-serif; }
 
 /********************************************************************************************* 
 

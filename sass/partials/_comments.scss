@@ -1,0 +1,23 @@
+#main ol.normalComments cite {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  font-style: normal;
+  float: left;
+  display: inline;
+  margin-right: 10px;
+  font-family: $fontset2;
+}
+#main ol.normalComments .commentmetadata a {
+  line-height: 18px;
+  font-size: 11px;
+  margin-bottom: 5px;
+  color: $color1;
+  font-family: $fontset2;
+}
+#main ol.normalComments li p {
+  font-size: 14px;
+}
+.reply a, .cancel-comment-reply a {
+  font-family: $fontset2;
+}

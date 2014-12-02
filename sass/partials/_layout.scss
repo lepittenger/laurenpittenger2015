@@ -37,3 +37,15 @@ ul.social-follow-me li {
   font-family: $fontset2;
   font-size: $fontsmall;
 }
+#searchform {
+  input[type="text"], input[type="email"] {
+    width: 55%;
+    float:left;
+  }
+  input[type="submit"] {
+    width: 39%;
+    margin: 0;
+    padding: 10px;
+    float:left;
+  }
+}
