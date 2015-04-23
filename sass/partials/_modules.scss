@@ -14,7 +14,9 @@
   -moz-border-radius: 0;
   border-radius: 0;
   &:hover {
-    background: darken($color3, 20%);
+    border-color: $color3;
+    color: $color3;
+    background: $color2;
   }
 }
 

@@ -139,7 +139,7 @@ body {
 
 #header {
   border-bottom: 0;
-  padding-top:12px;
+  padding-top:30px;
   a {
     color: $color1;
     &:hover {
@@ -150,8 +150,10 @@ body {
       text-transform: uppercase;
       font-family: $fontset2;
       font-weight: 700;
-      margin-top: 22px;
+      margin-top: 30px;
       margin-bottom: 0.15em;
+      letter-spacing: 2px;
+      font-size: em(28px);
     }
     p {
       text-align: center;
