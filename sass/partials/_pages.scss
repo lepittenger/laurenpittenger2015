@@ -7,26 +7,26 @@
   }
 }
 #sidebar {
-  
+
   float: right;
   display: inline;
   width: 260px;
   position: relative;
   margin: 0;
-  h3.title span, 
+  h3.title span,
   .widget h3 {
     font-size: 1em;
   }
   .widget {
-    background: lighten($color1, 69%);
+    border: 2px solid $color1;
     padding: 15px;
   }
 }
 
 .posts {
-  border-bottom: 1px dotted lighten($color1, 60%);
-  padding: 0 0 20px;
-  margin: 0 0 25px;
+  border-bottom: 2px solid $color1;
+  padding: 0 0 30px;
+  margin: 0 0 30px;
   font-size: 1em;
 }
 .post-content {

@@ -1,14 +1,15 @@
 /* buttons */
 
 .tags a {
-  color: $color2;
-  background: $color3;
+  color: $color1;
+  border: 2px solid $color1;
+  background: $color2;
   text-transform: uppercase;
   padding: 3px 7px;
   margin: 0 0 7px 5px;
   font-size: inherit;
   font-family: $fontset2;
-  letter-spacing: 0.1em;
+  letter-spacing: 2px;
   font-weight: bold;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -18,7 +19,7 @@
 }
 
 code {
-  background: lighten($color1, 10%);
+  background: $color1;
   color: $color2;
 }
 

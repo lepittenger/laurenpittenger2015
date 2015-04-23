@@ -6,15 +6,15 @@ $color4: #FF5628; // orange
 
 $fontset1: 'Oswald', Arial, serif;
 $fontset2: 'Open Sans', Arial, sans-serif;
-$fontset3: Georgia;
+$fontset3: 'Merriweather';
 $fontset4: Arial;
 
-$fontlevel1: 2.441em;
-$fontlevel2: 1.953em;
-$fontlevel3: 1.563em; 
-$fontlevel4: 1.25em;
-$fontlevel5: 1.15em;
-$fontlevel6: 1.09em;
+$fontlevel1: em(32px);
+$fontlevel2: em(30px);
+$fontlevel3: em(28px);
+$fontlevel4: em(26px);
+$fontlevel5: em(24px);
+$fontlevel6: em(22px);
 $fontsmall: 0.8em;
 
 $maxwidth: 961px;

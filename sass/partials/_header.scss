@@ -1,24 +1,22 @@
-/********************************************************************************************* 
+/*********************************************************************************************
 
 2. Header & Page Structure  -------------------------  header.php
 
-*********************************************************************************************/  
+*********************************************************************************************/
 html {
   font-size: 1em;
 }
 body {
-    background: $color2 url("images/bg.png");
+    background: $color2;
     color: $color1;
     font-family: $fontset3;
     text-align: center;
     font-size:inherit;
     line-height:1.45em;
 }
- 
+
 #wrapper {
     background: #fff;
-    border-left: 2px solid lighten($color1, 65%);
-    border-right: 2px solid lighten($color1, 65%);
     margin: 0 auto;
     text-align: center;
     width: 961px;
@@ -36,7 +34,7 @@ body {
 
 #header {
     padding-top: 55px;
-    padding-bottom:  12px;
+    padding-bottom:  30px;
     width:910px;
     margin-bottom:30px;
 }
@@ -52,6 +50,7 @@ body {
 #logo {
     float:none;
     text-align: center;
+    height: 55px;
     img {
       max-width: 55px;
     }
@@ -70,17 +69,18 @@ body {
 
 #content, .home_widgets { width:910px; }
 
-/********************************************************************************************* 
+/*********************************************************************************************
 
-5. Welcome Message 
+5. Welcome Message
 
-*********************************************************************************************/   
+*********************************************************************************************/
 #heading {
-  background: lighten($color1, 65%) !important;
-  margin-bottom: 28px;
-  padding: 20px;
+  background: $color1 !important;
+  color: $color2;
+  margin-bottom: 30px;
+  padding: 30px;
   font-family: $fontset3;
-  width:870px;
+  width:850px;
   .action {
     float:right;
     margin:50px;
@@ -117,8 +117,8 @@ body {
     }
   }
   h2, h1 {
-    color: $color1;
-    padding: 5px 0;
+    color: $color2;
+    padding: 0;
     text-transform: uppercase;
     font-family: $fontset2;
     font-weight:bold;
@@ -127,7 +127,7 @@ body {
     margin-bottom: 0;
   }
   p {
-    color: $color1;
+    color: $color2;
     font-size: em(20);
     line-height: 1.5;
     padding: 5px 0;
@@ -137,7 +137,7 @@ body {
 
 
 
-#header { 
+#header {
   border-bottom: 0;
   padding-top:12px;
   a {
@@ -164,8 +164,8 @@ body {
   margin: 30px auto 0;
   float: none;
   ul#mainmenu {
-    border-bottom: 1px dotted lighten($color1, 60%);
-    border-top: 1px dotted lighten($color1, 60%);
+    border-bottom: 1px solid $color1;
+    border-top: 1px solid $color1;
     float: left;
     width: 100%;
     li{
@@ -173,9 +173,9 @@ body {
       display: inline-block;
       float: left;
       a {
-        font-size: em(20); 
+        font-size: em(16);
         text-transform: uppercase;
-        font-family: $fontset1;
+        font-family: $fontset2;
         font-weight: bold;
         letter-spacing: 2px;
       }
@@ -184,17 +184,16 @@ body {
   .dropdown {
     text-align: center;
     a {
-      color: lighten($color1, 30%);
+      color: $color1;
     }
   }
-  li.current-menu-item a, 
-  li.current_page_item a, 
-  li.current-menu-ancestor a, 
-  li.current-menu-parent a, 
+  li.current-menu-item a,
+  li.current_page_item a,
+  li.current-menu-ancestor a,
+  li.current-menu-parent a,
   li.current_page_parent a,
   .dropdown a:hover {
-    color: $color3;
-    //border-bottom: 5px solid darken($color3, 20%);
+    border-bottom: 3px solid $color1;
   }
 }
 
@@ -210,7 +209,7 @@ body {
  vertical-align: middle;
  z-index: 99;
 }
- 
+
 .menu-btn span {
  display: block;
  width: 19px;
@@ -223,9 +222,9 @@ body {
 #responsive-menu, #mobile-menu {
  display: none;
 }
- 
+
 .expand {
- display: block !important; 
+ display: block !important;
 }
 
 #menu-blog {
@@ -245,7 +244,7 @@ body {
     }
     a {
       color: $color2;
-      font-size: em(13); 
+      font-size: em(13);
       text-transform: uppercase;
       font-family: $fontset1;
       font-weight: bold;

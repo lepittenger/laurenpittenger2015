@@ -11,34 +11,35 @@
 /* Load parent's CSS */
 @import url("../vimes/style.css");
 p {
-  font-family: Georgia;
+  font-family: "Merriweather";
   font-size: 1em;
-  margin-bottom: 1.3em; }
+  margin-bottom: 15px; }
 
 h1, h2, h3, h4 {
-  margin: 0 0 0.5em;
+  margin: 0 0 30px;
   font-weight: inherit;
-  line-height: 1.2;
-  font-family: "Oswald", Arial, serif; }
+  line-height: 1.5;
+  font-family: "Open Sans", Arial, sans-serif;
+  text-transform: uppercase; }
 
 h1, .post-title {
-  font-size: 2.441em;
+  font-size: 2pxem;
   margin-top: 0; }
 
 h2 {
-  font-size: 1.953em; }
+  font-size: 1.875pxem; }
 
 h3 {
-  font-size: 1.563em; }
+  font-size: 1.75pxem; }
 
 h4 {
-  font-size: 1.25em; }
+  font-size: 1.625pxem; }
 
 h5 {
-  font-size: 1.15em; }
+  font-size: 1.5pxem; }
 
 h6 {
-  font-size: 1.09em; }
+  font-size: 1.375pxem; }
 
 a {
   color: #01AEFF; }
@@ -47,7 +48,7 @@ a {
 
 .entry blockquote {
   font-style: normal;
-  font-family: Georgia;
+  font-family: "Merriweather";
   font-size: 1em;
   border: 0;
   border-left: solid 5px #454343;
@@ -78,11 +79,10 @@ a {
 */
 .posts h2 a {
   line-height: inherit;
-  margin: 0 0 4px;
   font-size: inherit;
-  color: #454343;
+  color: inherit;
   font-weight: normal;
-  font-family: "Oswald", Arial, serif; }
+  font-family: inherit; }
 
 .postcontent p {
   line-height: 1.7; }
@@ -95,16 +95,15 @@ a {
   font-family: "Oswald", Arial, serif; }
 
 .meta {
-  font-size: 0.875em;
-  font-family: "Open Sans", Arial, sans-serif; }
-  .meta a {
-    font-size: 0.875em; }
+  font-size: 0.75em;
+  font-family: "Merriweather"; }
 
 .entry .tags,
 .posts .tags {
   font-size: 0.8em;
   font-family: "Open Sans", Arial, sans-serif;
-  margin-top: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 2.5; }
@@ -114,11 +113,11 @@ a {
   line-height: 1.7; }
 #sidebar h3.title span,
 #sidebar #sidebar .widget h3 {
-  font-size: 1.25em; }
+  font-size: 1.625pxem; }
 #sidebar .textwidget,
 #sidebar .jcl_widget {
   font-size: 0.9em;
-  font-family: Georgia; }
+  font-family: "Merriweather"; }
 
 /* forms */
 #main #formLabels p {
@@ -184,7 +183,7 @@ input[type="email"] {
   border: 1px solid #797575;
   border-radius: 0; }
 
-/********************************************************************************************* 
+/*********************************************************************************************
 
 2. Header & Page Structure  -------------------------  header.php
 
@@ -193,17 +192,15 @@ html {
   font-size: 1em; }
 
 body {
-  background: #fff url("images/bg.png");
+  background: #fff;
   color: #454343;
-  font-family: Georgia;
+  font-family: "Merriweather";
   text-align: center;
   font-size: inherit;
   line-height: 1.45em; }
 
 #wrapper {
   background: #fff;
-  border-left: 2px solid #eae9e9;
-  border-right: 2px solid #eae9e9;
   margin: 0 auto;
   text-align: center;
   width: 961px; }
@@ -219,7 +216,7 @@ body {
 
 #header {
   padding-top: 55px;
-  padding-bottom: 12px;
+  padding-bottom: 30px;
   width: 910px;
   margin-bottom: 30px; }
 
@@ -233,7 +230,8 @@ body {
 
 #logo {
   float: none;
-  text-align: center; }
+  text-align: center;
+  height: 55px; }
   #logo img {
     max-width: 55px; }
 
@@ -249,17 +247,18 @@ body {
 #content, .home_widgets {
   width: 910px; }
 
-/********************************************************************************************* 
+/*********************************************************************************************
 
-5. Welcome Message 
+5. Welcome Message
 
 *********************************************************************************************/
 #heading {
-  background: #eae9e9 !important;
-  margin-bottom: 28px;
-  padding: 20px;
-  font-family: Georgia;
-  width: 870px; }
+  background: #454343 !important;
+  color: #fff;
+  margin-bottom: 30px;
+  padding: 30px;
+  font-family: "Merriweather";
+  width: 850px; }
   #heading .action {
     float: right;
     margin: 50px;
@@ -291,8 +290,8 @@ body {
       text-transform: uppercase;
       letter-spacing: 2px; }
   #heading h2, #heading h1 {
-    color: #454343;
-    padding: 5px 0;
+    color: #fff;
+    padding: 0;
     text-transform: uppercase;
     font-family: "Open Sans", Arial, sans-serif;
     font-weight: bold;
@@ -300,7 +299,7 @@ body {
     letter-spacing: 2px;
     margin-bottom: 0; }
   #heading p {
-    color: #454343;
+    color: #fff;
     font-size: 1.25em;
     line-height: 1.5;
     padding: 5px 0;
@@ -329,8 +328,8 @@ body {
   margin: 30px auto 0;
   float: none; }
   #menu ul#mainmenu {
-    border-bottom: 1px dotted #dedddd;
-    border-top: 1px dotted #dedddd;
+    border-bottom: 1px solid #454343;
+    border-top: 1px solid #454343;
     float: left;
     width: 100%; }
     #menu ul#mainmenu li {
@@ -338,22 +337,22 @@ body {
       display: inline-block;
       float: left; }
       #menu ul#mainmenu li a {
-        font-size: 1.25em;
+        font-size: 1em;
         text-transform: uppercase;
-        font-family: "Oswald", Arial, serif;
+        font-family: "Open Sans", Arial, sans-serif;
         font-weight: bold;
         letter-spacing: 2px; }
   #menu .dropdown {
     text-align: center; }
     #menu .dropdown a {
-      color: #928f8f; }
+      color: #454343; }
   #menu li.current-menu-item a,
   #menu li.current_page_item a,
   #menu li.current-menu-ancestor a,
   #menu li.current-menu-parent a,
   #menu li.current_page_parent a,
   #menu .dropdown a:hover {
-    color: #01AEFF; }
+    border-bottom: 3px solid #454343; }
 
 .menu-btn div {
   position: absolute;
@@ -435,12 +434,20 @@ body {
   background: #eae9e9;
   padding: 10px 4%; }
   #comments h3 {
-    font-size: 1.563em;
+    font-size: 1.75pxem;
     border-bottom: 3px solid #fff; }
 
 .posts .meta, .post_content .meta {
   margin-bottom: 25px;
-  margin-top: -7px; }
+  margin-top: -7px;
+  color: #928f8f; }
+
+.meta a {
+  font-size: inherit; }
+
+.post_content {
+  margin: 0 60px 30px 0;
+  width: 590px; }
 
 ul.social-follow-me {
   text-align: center; }
@@ -527,7 +534,7 @@ ul.social-follow-me li {
   word-spacing: 5px; }
 
 #portfolio .meta {
-  font-family: Georgia;
+  font-family: "Merriweather";
   color: #797575;
   font-size: 0.75em;
   font-style: italic;
@@ -757,13 +764,13 @@ ul.social-follow-me li {
   #sidebar .widget h3 {
     font-size: 1em; }
   #sidebar .widget {
-    background: #f4f4f4;
+    border: 2px solid #454343;
     padding: 15px; }
 
 .posts {
-  border-bottom: 1px dotted #dedddd;
-  padding: 0 0 20px;
-  margin: 0 0 25px;
+  border-bottom: 2px solid #454343;
+  padding: 0 0 30px;
+  margin: 0 0 30px;
   font-size: 1em; }
 
 .post-content {
@@ -779,14 +786,15 @@ div.wpcf7 {
 
 /* buttons */
 .tags a {
-  color: #fff;
-  background: #01AEFF;
+  color: #454343;
+  border: 2px solid #454343;
+  background: #fff;
   text-transform: uppercase;
   padding: 3px 7px;
   margin: 0 0 7px 5px;
   font-size: inherit;
   font-family: "Open Sans", Arial, sans-serif;
-  letter-spacing: 0.1em;
+  letter-spacing: 2px;
   font-weight: bold;
   -moz-border-radius: 0;
   border-radius: 0; }
@@ -794,7 +802,7 @@ div.wpcf7 {
     background: #00699a; }
 
 code {
-  background: #5f5c5c;
+  background: #454343;
   color: #fff; }
 
 .img-responsive {
@@ -874,7 +882,7 @@ code {
       font-size: 0.8em; }
     #footer .widget h3 {
       color: #454343;
-      font-size: 1.25em;
+      font-size: 1.625pxem;
       font-family: "Open Sans", Arial, sans-serif;
       font-weight: 700;
       letter-spacing: 2px;
